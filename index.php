@@ -17,7 +17,7 @@ if (isset($_GET['page']) && $_GET['page']  === '1') {
 }
 
 $router = new App\Router('/views');
-$router->get('/', '/post/index', 'home')
+$router->get('/', 'post/index', 'home')
         ->get('/blog/category/[*:slug]-[i:id]', 'category/show', 'category')
         ->get('/blog/[*:slug]-[i:id]', 'post/show', 'post')
         ->match('/login', 'auth/login', 'login')
