@@ -1,5 +1,5 @@
 <?php
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 define('DEBUG_TIME', microtime(true));
 
